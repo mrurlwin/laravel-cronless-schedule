@@ -1,5 +1,5 @@
 {
-    "name": "spatie/laravel-cronless-schedule",
+    "name": "mrurlwin/laravel-cronless-schedule",
     "description": "Run the Laravel scheduler without relying on cron",
     "keywords": [
         "spatie",

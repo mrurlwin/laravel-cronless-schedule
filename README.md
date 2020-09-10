@@ -15,8 +15,12 @@ This is how you can start the cronless schedule:
 php artisan schedule:run-cronless
 ```
 
-This command will never end. Behind the scenes it will execute `php artisan schedule` every minute. 
- 
+This command will never end. Behind the scenes it will execute `php artisan schedule` every minute.
+
+This fork provides access to the original package with support for PHP 7.3+.
+
+Please be aware that Windows is not supported but WSL can be used.
+
 ## Support us
 
 Learn how to create a package like this one, by watching our premium video course:
@@ -43,7 +47,7 @@ This is how you can start the cronless schedule:
 php artisan schedule:run-cronless
 ```
 
-By default, it will run every minute. 
+By default, it will run every minute.
 
 ### Manually triggering a run
 
