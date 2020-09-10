@@ -5,6 +5,10 @@
 ![Psalm](https://github.com/spatie/laravel-cronless-schedule/workflows/Psalm/badge.svg)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-cronless-schedule.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-cronless-schedule)
 
+## Fork
+
+This is a fork of the Spatie package [spatie/laravel-cronless-schedule](https://github.com/spatie/laravel-cronless-schedule) with support for PHP 7.3. If you don't need support for this version of PHP, please use the Spatie package.
+
 [Laravel's native scheduler](https://laravel.com/docs/master/scheduling) relies on cron to be executed every minute. It's rock solid and in most cases you should stick to using it.
 
 If you want to simulate the scheduler running every minute in a test environment, using cron can be cumbersome. This package provides a command to run the scheduler every minute, without relying on cron. Instead it uses a [ReactPHP](https://reactphp.org) loop.
@@ -21,7 +25,7 @@ This fork provides access to the original package with support for PHP 7.3+.
 
 Please be aware that Windows is not supported but WSL can be used.
 
-## Support us
+## Support Spatie
 
 This package was created by Spatie so please support them for all their hard work below.
 
@@ -29,7 +33,7 @@ Learn how to create a package like this one, by watching a Spatie premium video 
 
 [![Laravel Package training](https://spatie.be/github/package-training.jpg)](https://laravelpackage.training)
 
-Spatie invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
+Spatie invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support them by [buying one of their paid products](https://spatie.be/open-source/support-us).
 
 Spatie highly appreciate you sending a postcard from your hometown, mentioning which of their package(s) you are using. You'll find the address on [their contact page](https://spatie.be/about-us). Spatie publish all received postcards on [their virtual postcard wall](https://spatie.be/open-source/postcards).
 
