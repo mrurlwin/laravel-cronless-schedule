@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\CronlessSchedule\Tests;
+namespace MrUrlwin\CronlessSchedule\Tests;
 
 class ScheduleRunCronlessCommandTest extends TestCase
 {

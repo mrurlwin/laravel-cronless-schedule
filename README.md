@@ -23,20 +23,22 @@ Please be aware that Windows is not supported but WSL can be used.
 
 ## Support us
 
-Learn how to create a package like this one, by watching our premium video course:
+This package was created by Spatie so please support them for all their hard work below.
+
+Learn how to create a package like this one, by watching a Spatie premium video course:
 
 [![Laravel Package training](https://spatie.be/github/package-training.jpg)](https://laravelpackage.training)
 
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
+Spatie invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+Spatie highly appreciate you sending a postcard from your hometown, mentioning which of their package(s) you are using. You'll find the address on [their contact page](https://spatie.be/about-us). Spatie publish all received postcards on [their virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## Installation
 
 You can install the package via composer. Probably you only want to use this schedule in a development environment.
 
 ```bash
-composer require spatie/laravel-cronless-schedule --dev
+composer require mrurlwin/laravel-cronless-schedule --dev
 ```
 
 ## Usage

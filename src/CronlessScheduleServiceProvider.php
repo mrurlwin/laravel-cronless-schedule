@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\CronlessSchedule;
+namespace MrUrlwin\CronlessSchedule;
 
 use Illuminate\Support\ServiceProvider;
 use React\EventLoop\Factory;
 use React\EventLoop\LoopInterface;
-use Spatie\CronlessSchedule\Commands\ScheduleRunCronlessCommand;
+use MrUrlwin\CronlessSchedule\Commands\ScheduleRunCronlessCommand;
 
 class CronlessScheduleServiceProvider extends ServiceProvider
 {
@@ -14,7 +14,9 @@ class CronlessScheduleServiceProvider extends ServiceProvider
         $this->app
             ->when(ScheduleRunCronlessCommand::class)
             ->needs(LoopInterface::class)
-            ->give(fn () => Factory::create());
+            ->give(function () {
+                return Factory::create();
+            });
     }
 
     public function boot()

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\CronlessSchedule\Commands;
+namespace MrUrlwin\CronlessSchedule\Commands;
 
 use Clue\React\Stdio\Stdio;
 use Illuminate\Console\Command;
@@ -16,11 +16,11 @@ class ScheduleRunCronlessCommand extends Command
 
     public $description = 'Run the scheduler';
 
-    protected ?string $command = null;
+    protected $command = null;
 
-    protected ?int $frequency = null;
+    protected $frequency = null;
 
-    protected LoopInterface $loop;
+    protected $loop;
 
     public function __construct(LoopInterface $loop)
     {
@@ -58,10 +58,14 @@ class ScheduleRunCronlessCommand extends Command
         $stopAfter = (int)$this->option('stop-after-seconds');
 
         if ($stopAfter > 0) {
-            $this->loop->addTimer($stopAfter, fn () => $this->loop->stop());
+            $this->loop->addTimer($stopAfter, function () {
+                return $this->loop->stop();
+            });
         }
 
-        $this->loop->addPeriodicTimer($this->frequency, fn () => $this->runCronlessCommand());
+        $this->loop->addPeriodicTimer($this->frequency, function () {
+            return $this->runCronlessCommand();
+        });
 
         return $this;
     }
@@ -72,7 +76,9 @@ class ScheduleRunCronlessCommand extends Command
 
         $stdio->setEcho(false);
 
-        $stdio->on('data', fn () => $this->runCronlessCommand());
+        $stdio->on('data', function () {
+            return $this->runCronlessCommand();
+        });
 
         return $this;
     }

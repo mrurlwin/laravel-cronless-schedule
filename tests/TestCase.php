@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\CronlessSchedule\Tests;
+namespace MrUrlwin\CronlessSchedule\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\CronlessSchedule\CronlessScheduleServiceProvider;
+use MrUrlwin\CronlessSchedule\CronlessScheduleServiceProvider;
 
 class TestCase extends Orchestra
 {
